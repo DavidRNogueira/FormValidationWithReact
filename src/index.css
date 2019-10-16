@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
+body{
+    font-family: 'Concert One', cursive;
+    margin: 1vh auto 1vh auto;
+}
+form{
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas:
+    "userlabel userinput"
+    "passlabel passinput" ;
+    grid-gap: .5em;
+    width:50%;
+    margin:5vh auto 5vh auto;
+}
+.logincontainer{
+    margin: 10vh auto 0 auto;
+    background-color: lightblue;
+    border: 1px solid blue;
+    width:30%;
+
+}
+
+#header{
+    text-align: center;
+}
+
+#userlabel{
+    grid-area: userlabel;
+}
+
+#userinput{
+    grid-area: userinput;
+
+}
+
+#passlabel{
+    grid-area: passlabel;
+
+
+}
+
+#passinput{
+    grid-area: passinput;
+
+}
+
+#submitbtn{
+    display: block;
+margin:auto;}
+
+#errormessage{
+    color:lightblue;
+    text-align: center;
+
+}
